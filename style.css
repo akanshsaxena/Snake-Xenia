@@ -1,0 +1,78 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+  margin-top: 50px;
+}
+
+#score,
+#score1{
+  color: rgb(251, 138, 97);
+  font-size: 1.2rem;
+  padding: 10px 30px;
+}
+.btn{
+  background: rgb(251, 138, 97);
+  border: unset;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: rgb(225, 247, 85);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.btn:hover{
+  transform: translateX(5px);
+  background: rgb(225, 247, 85);
+  color: rgb(251, 138, 97);
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(28, 1fr);
+  border: rgb(225, 247, 85) solid 5px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 475px;
+}
+
+.base{
+
+  border: white 1px solid;
+  background: rgb(251, 138, 97);
+  width: 15px;
+  height: 15px;
+}
+
+.snake-body{
+  background: linear-gradient(to right, rgb(0, 255, 10), rgb(255, 245, 17));
+  /* background: brown; */
+}
+.snake-head{
+  background: rgb(113, 132, 255);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.snake-tail{
+  background: linear-gradient(to right, rgb(0, 255, 10), rgb(255, 245, 17));
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.big-dots{
+  background: black;
+}
+
+.dots{
+  background: red;
+  border-radius: 50%;
+}
